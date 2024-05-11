@@ -1,0 +1,19 @@
+* org-table-conditional-styling
+Style your org mode tables with colours or other font attributes,
+controlled by regular expressions.
+
+** Installation
+Put the file ~org-table-conditional-styling.el~ in a place where Emacs
+can find it, and ~require~ the package. For example, put ~(require
+'org-table-conditional styling)~ into your init file.
+
+** Basic usage
+Background and foreground colours are specified as attributes attached
+to the org mode table. Here's an example:
+
+#+ATTR_CS: :fg ("?" "dark red") ("!" "black")
+#+ATTR_CS: :bg ("6" "light gray") ("!" "light blue") ("?" "salmon")
+| a  | !   |
+| 6  | 123 |
+| 7? | xfx |
+
