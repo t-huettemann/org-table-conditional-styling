@@ -11,9 +11,12 @@ can find it, and ~require~ the package. For example, put ~(require
 Background and foreground colours are specified as attributes attached
 to the org mode table. Here's an example:
 
-#+ATTR_CS: :fg ("?" "dark red") ("!" "black")
-#+ATTR_CS: :bg ("6" "light gray") ("!" "light blue") ("?" "salmon")
+#+begin_example
+,#+ATTR_CS: :fg ("?" "dark red") ("!" "black")
+,#+ATTR_CS: :bg ("6" "light gray") ("!" "light blue") ("?" "salmon")
 | a  | !   |
 | 6  | 123 |
 | 7? | xfx |
+#+end_example
+
 
